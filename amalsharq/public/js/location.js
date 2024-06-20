@@ -3,7 +3,7 @@ frappe.ui.form.on("Location", {
     if (!frm.is_new()) {
       if (frm.doc.latitude && frm.doc.longitude) {
         let map = frm.fields_dict.location.map;
-        L.marker([frm.doc.latitude, frm.doc.longitude])
+        L.marker([+frm.doc.latitude, +frm.doc.longitude])
           .addTo(map)
           .bindPopup(frm.doc.name)
           .openPopup();
