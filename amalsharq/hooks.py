@@ -9,9 +9,12 @@ app_license = "unlicense"
 # Includes in <head>
 # ------------------
 
+fixtures = ["Custom Field"]
+
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/amalsharq/css/amalsharq.css"
-# app_include_js = "/assets/amalsharq/js/amalsharq.js"
+app_include_js = ["/assets/amalsharq/js/map_defaults.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/amalsharq/css/amalsharq.css"
@@ -28,7 +31,7 @@ app_license = "unlicense"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Location" : "public/js/location.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -115,7 +118,7 @@ app_license = "unlicense"
 # Override standard doctype classes
 
 # override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"Location": "amalsharq.overrides.location.CustomLocation"
 # }
 
 # Document Events
