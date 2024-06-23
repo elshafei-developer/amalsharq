@@ -9,7 +9,7 @@ required_apps = ["frappe/erpnext","frappe/hrms"]
 # Includes in <head>
 # ------------------
 
-fixtures = ["Custom Field"]
+fixtures = ["Custom Field","Property Setter"]
 
 
 # include js, css files in header of desk.html
