@@ -4,7 +4,7 @@ app_publisher = "hassan elshafeai"
 app_description = "for handel and overflow on Frapp, ERPNext and hrms Apps"
 app_email = "el.shafeai.developer@gmail.com"
 app_license = "unlicense"
-required_apps = ["frappe/erpnext","frappe/hrms"]
+required_apps = ["frappe/frappe","frappe/erpnext","frappe/hrms"]
 
 # Includes in <head>
 # ------------------
