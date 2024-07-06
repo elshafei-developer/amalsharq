@@ -1,5 +1,19 @@
 frappe.ui.form.on("Location", {
   refresh: function (frm) {
+    const classesToRemove = [
+      "leaflet-draw-draw-polyline",
+      "leaflet-draw-draw-polygon",
+      "leaflet-draw-draw-rectangle",
+      "leaflet-draw-draw-circle",
+      "leaflet-draw-draw-circlemarker",
+    ];
+
+    for (let i = 0; i < classesToRemove.length; i++) {
+      const elementToRemove = document.querySelector(`a.${classesToRemove[i]}`);
+      if (elementToRemove) {
+        elementToRemove.remove();
+      }
+    }
     if (!frm.is_new()) {
       let latitude = +frm.doc.latitude;
       let longitude = +frm.doc.longitude;
