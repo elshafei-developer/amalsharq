@@ -117,9 +117,9 @@ doctype_js = {"Location" : "public/js/location.js"}
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"Location": "amalsharq.overrides.location.CustomLocation"
-# }
+override_doctype_class = {
+	"Location": "amalsharq.overrides.location.CustomLocation"
+}
 
 # Document Events
 # ---------------

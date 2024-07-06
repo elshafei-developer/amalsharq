@@ -1,6 +1,5 @@
 // Make sure we have a dictionary to add our custom settings
 const map_settings = frappe.provide("frappe.utils.map_defaults");
-
 // Center and zoomlevel can be copied from the URL of
 // the map view at openstreetmap.org.
 
